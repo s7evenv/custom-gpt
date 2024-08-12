@@ -16,6 +16,9 @@ function randomDatetimeBetweenDates($startDate, $endDate) {
 
     // Return the random datetime as a DateTime object.
     return new DateTime($randomDatetime);
+
+
+    
 }
 
 $startDate = '2023-01-01';
@@ -24,6 +27,5 @@ $endDate = '2023-12-31';
 $randomDatetime = randomDatetimeBetweenDates($startDate, $endDate);
 
 echo $randomDatetime->format('Y-m-d H:i:s');
-
 
 ?>
